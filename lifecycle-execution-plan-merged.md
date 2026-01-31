@@ -11,7 +11,7 @@
 * Version-based releases are explicit exceptions.
 * Planning is front-loaded; execution follows mechanically.
 
-> **A concern appears in the earliest phase where it is required to satisfy that phase’s “Usable means”, and then reappears in later phases with a higher bar.**
+> **A concern appears in the earliest phase where it is required to satisfy that phase's "Usable means", and then reappears in later phases with a higher bar.**
 
 ---
 
@@ -482,5 +482,3 @@ The product meets regulatory, privacy, and compliance requirements. Data residen
 * Observability
 * Backup & Recovery
 * Documentation
-
----
