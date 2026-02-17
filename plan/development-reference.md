@@ -30,7 +30,7 @@ These you implement yourself, regardless of phase or libraries/services:
 
 * **Email + password auth**
   * Phase 1+: **[HYBRID]** (LIB: Auth.js/NextAuth; CUSTOM: user model)
-* **OAuth**
+* **OAuth (at least one provider)**
   * Phase 1-2: Not implemented
   * Phase 3+: **[LIB/SERVICE]** (Auth.js + OAuth providers)
 * **Magic links**
@@ -43,6 +43,30 @@ These you implement yourself, regardless of phase or libraries/services:
 * **MFA**
   * Phase 1-3: Not implemented
   * Phase 4+: **[LIB/SERVICE]** (TOTP library; optional SMS/email service)
+
+#### Auth Boundary (What To Buy vs Build)
+
+**Buy (machinery):**
+
+* Framework-level auth/session plumbing via Auth.js/NextAuth or Better Auth
+* Password hashing primitives (bcrypt/argon2 libraries)
+* OAuth protocol/provider integrations (at least one provider)
+* Email delivery infrastructure for magic links/recovery/invites
+* MFA crypto primitives (TOTP libraries) and optional SMS/email delivery
+
+**Build (your semantics):**
+
+* User/account domain model and account lifecycle rules
+* Session inventory model (device/session list with revocation metadata)
+* Session invalidation policy: logout current, logout all, forced revoke cases
+* Suspicious-login/risk policies and resulting UX/actions
+* Account recovery UX/policies (including anti-enumeration and abuse controls)
+* Authorization semantics (RBAC/ABAC), org membership effects, and audit semantics
+
+**Stop-building line for auth:**
+
+* Do not implement OAuth, password hashing, OTP algorithms, token primitives, or email infrastructure from scratch.
+* Always keep policy decisions and access semantics in application-owned code/tables.
 
 ### Database & ORM
 
@@ -284,7 +308,7 @@ These you implement yourself, regardless of phase or libraries/services:
 * production grade authentication — **[HYBRID]** (LIB: Auth.js; CUSTOM: policies, user model)
 
   * email password — **[HYBRID]** (LIB: auth framework; LIB: hashing)
-  * oauth — **[LIB/SERVICE]** (Auth.js + OAuth providers)
+  * oauth (at least one provider) — **[LIB/SERVICE]** (Auth.js + OAuth providers)
   * magic links — **[HYBRID]** (LIB: Auth.js; SERVICE: email)
   * mfa — **[LIB/SERVICE]** (TOTP library; optional service for SMS/email)
   * session management — **[LIB]** (Auth.js/session store)
@@ -715,7 +739,7 @@ Mostly **[CUSTOM]** (docs + workflows) + **[SERVICE]** where enforcement is infr
 
 ### Authentication & Authorization
 
-* OAuth — **[LIB/SERVICE]** (Auth.js + OAuth providers)
+* OAuth (at least one provider) — **[LIB/SERVICE]** (Auth.js + OAuth providers)
 * Magic links — **[HYBRID]** (LIB: Auth.js; SERVICE: email)
 
 ### Feature Management

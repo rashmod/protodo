@@ -7,11 +7,19 @@
 ## Authentication & Authorization
 
 * [ ] Email + password signup
+* [ ] User/account domain model
+* [ ] Account lifecycle rules (active/disabled/recovery states)
 * [ ] Password hashing
 * [ ] Login flow
 * [ ] Session creation
 * [ ] Session persistence
+* [ ] Session inventory (list active sessions/devices)
 * [ ] Session invalidation (logout)
+* [ ] Session invalidation (logout all devices)
+* [ ] Forced session revocation rules (password reset/account disable)
+* [ ] Password recovery flow
+* [ ] Password recovery anti-enumeration behavior
+* [ ] Password recovery abuse controls (rate limits/lockouts)
 * [ ] Enforce single-user model
 * [ ] Explicitly block org/workspace creation
 * [ ] Explicitly block RBAC
@@ -99,6 +107,10 @@
 * [ ] Organization membership
 * [ ] Role definitions
 * [ ] RBAC enforcement
+* [ ] Authorization semantics with org membership effects
+* [ ] Session revocation on org membership/role changes
+* [ ] Suspicious login signal logging (IP/device anomalies)
+* [ ] Suspicious login handling policy (re-auth/temporary restrictions)
 * [ ] Audit logs — authentication events
 * [ ] Audit logs — data mutations
 
@@ -189,7 +201,7 @@
 
 ## Authentication & Authorization
 
-* [ ] OAuth
+* [ ] OAuth provider integration (at least one provider)
 * [ ] Magic links
 
 ## Feature Management

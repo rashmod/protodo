@@ -28,7 +28,11 @@ A user can sign up, authenticate, create, edit, complete, and delete tasks. Data
 **Authentication & Authorization**
 
 * Email + password
+* User/account domain model + account lifecycle rules
 * Session management
+* Session inventory + device visibility
+* Explicit session invalidation rules (current session, all sessions, forced revoke)
+* Account recovery UX/policies (anti-enumeration + abuse controls)
 * Single user only
 * No orgs
 * No RBAC / ABAC
@@ -113,7 +117,10 @@ Multiple users collaborate inside shared workspaces. Users can invite others, ma
 * Invite flow
 * Org membership
 * Basic RBAC
-* Audit logs (auth + data changes)
+* Authorization semantics with org membership effects
+* Session revocation on membership/role changes
+* Suspicious login detection + handling policy
+* Audit semantics and logs (auth + data changes)
 
 **Background Processing & Notifications**
 
@@ -199,7 +206,7 @@ The product enforces plans, limits, and billing. Core workflows operate reliably
 
 **Authentication & Authorization**
 
-* OAuth
+* OAuth provider integration (at least one)
 * Magic links
 
 **Feature Management**
