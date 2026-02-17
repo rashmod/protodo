@@ -1,0 +1,7 @@
+{
+  "name": "@protodo/tsconfig",
+  "private": true,
+  "files": [
+    "*.json"
+  ]
+}
