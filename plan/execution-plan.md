@@ -4,12 +4,12 @@
 
 ## Guiding Rules (Locked)
 
-* Lifecycle-based planning is the primary strategy.
-* After MVP, the product is always usable as a real SaaS.
-* Other planning strategies are used within lifecycle phases.
-* Some concerns repeat across phases with increasing depth.
-* Version-based releases are explicit exceptions.
-* Planning is front-loaded; execution follows mechanically.
+- Lifecycle-based planning is the primary strategy.
+- After MVP, the product is always usable as a real SaaS.
+- Other planning strategies are used within lifecycle phases.
+- Some concerns repeat across phases with increasing depth.
+- Version-based releases are explicit exceptions.
+- Planning is front-loaded; execution follows mechanically.
 
 > **A concern appears in the earliest phase where it is required to satisfy that phase's "Usable means", and then reappears in later phases with a higher bar.**
 
@@ -27,72 +27,72 @@ A user can sign up, authenticate, create, edit, complete, and delete tasks. Data
 
 **Authentication & Authorization**
 
-* Email + password
-* User/account domain model + account lifecycle rules
-* Session management
-* Session inventory + device visibility
-* Explicit session invalidation rules (current session, all sessions, forced revoke)
-* Account recovery UX/policies (anti-enumeration + abuse controls)
-* Single user only
-* No orgs
-* No RBAC / ABAC
-* No OAuth, no magic links
-* No audit logs
+- Email + password
+- User/account domain model + account lifecycle rules
+- Session management
+- Session inventory + device visibility
+- Explicit session invalidation rules (current session, all sessions, forced revoke)
+- Account recovery UX/policies (anti-enumeration + abuse controls)
+- Single user only
+- No orgs
+- No RBAC / ABAC
+- No OAuth, no magic links
+- No audit logs
 
 **Core Product**
 
-* Task CRUD
-* Collaboration explicitly **not present**
-* Basic reminders (best-effort)
+- Task CRUD
+- Collaboration explicitly **not present**
+- Basic reminders (best-effort)
 
 **API**
 
-* REST API
-* Pagination
-* Input validation
-* No versioning guarantees
+- REST API
+- Pagination
+- Input validation
+- No versioning guarantees
 
 **Frontend**
 
-* Responsive UI
-* Error boundaries
-* Basic client-side caching
+- Responsive UI
+- Error boundaries
+- Basic client-side caching
 
 **Data Management**
 
-* Soft deletes only
+- Soft deletes only
 
 **Storage & Databases**
 
-* Relational DB
-* Single region
+- Relational DB
+- Single region
 
 **Infrastructure & Deployment**
 
-* Single environment
-* Manual deployments
-* No zero-downtime requirement
+- Single environment
+- Manual deployments
+- No zero-downtime requirement
 
 **Security**
 
-* TLS
-* Password hashing
-* Input sanitization
-* CSRF / XSS / SQLi protection
+- TLS
+- Password hashing
+- Input sanitization
+- CSRF / XSS / SQLi protection
 
 **Backup & Recovery**
 
-* Basic backups
-* Manual restore
+- Basic backups
+- Manual restore
 
 **Testing & QA**
 
-* Linting
-* Basic unit tests
+- Linting
+- Basic unit tests
 
 **Observability**
 
-* Minimal logging only
+- Minimal logging only
 
 ---
 
@@ -108,71 +108,71 @@ Multiple users collaborate inside shared workspaces. Users can invite others, ma
 
 **Multi-Tenancy**
 
-* Org / workspace model
-* Tenant isolation
-* Sharding strategy defined (not fully executed)
+- Org / workspace model
+- Tenant isolation
+- Sharding strategy defined (not fully executed)
 
 **Authentication & Authorization**
 
-* Invite flow
-* Org membership
-* Basic RBAC
-* Authorization semantics with org membership effects
-* Session revocation on membership/role changes
-* Suspicious login detection + handling policy
-* Audit semantics and logs (auth + data changes)
+- Invite flow
+- Org membership
+- Basic RBAC
+- Authorization semantics with org membership effects
+- Session revocation on membership/role changes
+- Suspicious login detection + handling policy
+- Audit semantics and logs (auth + data changes)
 
 **Background Processing & Notifications**
 
-* Queues
-* Async reminders
-* Email notifications
-* Retry strategies
+- Queues
+- Async reminders
+- Email notifications
+- Retry strategies
 
 **API**
 
-* Sorting and filtering
-* Rate limiting (coarse)
-* Idempotent writes
-* Basic webhooks
+- Sorting and filtering
+- Rate limiting (coarse)
+- Idempotent writes
+- Basic webhooks
 
 **Frontend**
 
-* Optimistic updates
-* Accessibility baseline
-* Frontend telemetry
-* Bug report UI
+- Optimistic updates
+- Accessibility baseline
+- Frontend telemetry
+- Bug report UI
 
 **Analytics & Product Metrics**
 
-* Event tracking
+- Event tracking
 
 **Integrations**
 
-* Import / export (CSV, JSON, XML)
+- Import / export (CSV, JSON, XML)
 
 **Process & Documentation**
 
-* Architecture diagrams
+- Architecture diagrams
 
 **Infrastructure**
 
-* Multi-environment (dev / prod)
-* Build pipelines
-* Repeatable deployments
+- Multi-environment (dev / prod)
+- Build pipelines
+- Repeatable deployments
 
 **Security**
 
-* Secrets management
+- Secrets management
 
 **Observability**
 
-* Structured logging
-* Metrics (basic, not RED/USE)
+- Structured logging
+- Metrics (basic, not RED/USE)
 
 **Backup & Recovery**
 
-* Data migration tooling (manual / guided)
+- Data migration tooling (manual / guided)
 
 ---
 
@@ -188,104 +188,104 @@ The product enforces plans, limits, and billing. Core workflows operate reliably
 
 **Payments & Billing**
 
-* Subscription lifecycle (create, upgrade, downgrade, cancel)
-* Free vs paid users
-* Usage limits
-* Feature gating
-* Invoices & receipts
-* Proration
-* Coupons
-* Billing webhooks
+- Subscription lifecycle (create, upgrade, downgrade, cancel)
+- Free vs paid users
+- Usage limits
+- Feature gating
+- Invoices & receipts
+- Proration
+- Coupons
+- Billing webhooks
 
 **AI & Smart Features**
 
-* AI integration
-* Task summarization
-* Natural language input parsing
-* Auto-categorization
+- AI integration
+- Task summarization
+- Natural language input parsing
+- Auto-categorization
 
 **Authentication & Authorization**
 
-* OAuth provider integration (at least one)
-* Magic links
+- OAuth provider integration (at least one)
+- Magic links
 
 **Feature Management**
 
-* Feature flags
-* Kill switches
+- Feature flags
+- Kill switches
 
 **Background Processing**
 
-* Event-driven architecture
-* Dead letter queues
-* Backpressure handling
+- Event-driven architecture
+- Dead letter queues
+- Backpressure handling
 
 **API**
 
-* API versioning
-* Graceful deprecation paths
-* GraphQL API
+- API versioning
+- Graceful deprecation paths
+- GraphQL API
 
 **Data Management**
 
-* Hard deletes (policy-driven)
+- Hard deletes (policy-driven)
 
 **Storage & Databases**
 
-* Caching
-* Read / write splitting
-* Point-in-time recovery
-* File storage
-* NoSQL DB (selective use)
+- Caching
+- Read / write splitting
+- Point-in-time recovery
+- File storage
+- NoSQL DB (selective use)
 
 **Observability & Monitoring**
 
-* Tracing
-* Error tracking
-* Metrics (RED, USE)
-* Monitoring & alerting
-* On-call rotation defined
+- Tracing
+- Error tracking
+- Metrics (RED, USE)
+- Monitoring & alerting
+- On-call rotation defined
 
 **Analytics & Product Metrics**
 
-* Funnels
-* Cohort analysis
-* Feature adoption metrics
-* Churn tracking
-* Retention curves
-* Product metrics
+- Funnels
+- Cohort analysis
+- Feature adoption metrics
+- Churn tracking
+- Retention curves
+- Product metrics
 
 **User Features**
 
-* Onboarding flow
-* Templates / workflows
-* User feedback mechanism
-* Changelog UX
+- Onboarding flow
+- Templates / workflows
+- User feedback mechanism
+- Changelog UX
 
 **Integrations**
 
-* Calendar integrations
+- Calendar integrations
 
 **Security**
 
-* Threat modeling
+- Threat modeling
 
 **Compliance & Privacy**
 
-* Privacy policy
-* Terms of service
-* Data retention policy (defined, limited)
+- Privacy policy
+- Terms of service
+- Data retention policy (defined, limited)
 
 **Testing & QA**
 
-* Integration tests
-* Load testing
+- Integration tests
+- Load testing
 
 **Incident Management**
 
-* Incident process
-* Postmortems
-* Status page
+- Incident process
+- Postmortems
+- Status page
 
 ---
 
@@ -300,96 +300,97 @@ The system scales horizontally without performance degradation. Deployments occu
 ### New or Expanded
 
 **Authentication & Authorization**
-* Basic ABAC
+
+- Basic ABAC
 
 **Infrastructure & Deployment**
 
-* Kubernetes
-* Autoscaling
-* Load balancing
-* CDN
-* Blue/green & canary deployments
-* Zero-downtime deployments and migrations
-* Rollback strategies
-* PR preview deployments
-* Infrastructure as Code
-* Bring-your-own-infra support
+- Kubernetes
+- Autoscaling
+- Load balancing
+- CDN
+- Blue/green & canary deployments
+- Zero-downtime deployments and migrations
+- Rollback strategies
+- PR preview deployments
+- Infrastructure as Code
+- Bring-your-own-infra support
 
 **Storage & Databases**
 
-* Search index
-* Cold storage
-* Index bloat management & vacuuming
-* Hot user / hot partition handling
+- Search index
+- Cold storage
+- Index bloat management & vacuuming
+- Hot user / hot partition handling
 
 **Frontend**
 
-* Component design system
-* Theming
-* Offline support (non-realtime)
-* Performance budgets (LCP, CLS)
-* Lazy loading
-* Virtualization for long lists
-* Debounced searches
+- Component design system
+- Theming
+- Offline support (non-realtime)
+- Performance budgets (LCP, CLS)
+- Lazy loading
+- Virtualization for long lists
+- Debounced searches
 
 **Collaboration & Real-time**
 
-* Explicit collaboration features
-* Realtime presence
-* Offline sync (non-CRDT)
-* Conflict resolution
+- Explicit collaboration features
+- Realtime presence
+- Offline sync (non-CRDT)
+- Conflict resolution
 
 **Reliability & Resilience**
 
-* Circuit breakers
-* Graceful degradation
+- Circuit breakers
+- Graceful degradation
 
 **Observability**
 
-* SLOs / SLIs
-* Error budgets
-* Performance monitoring
-* Cost monitoring
-* Runbooks
+- SLOs / SLIs
+- Error budgets
+- Performance monitoring
+- Cost monitoring
+- Runbooks
 
 **Security**
 
-* MFA
-* Token rotation
-* Dependency scanning
-* Secrets rotation
-* DDoS protection
-* Encryption at rest
+- MFA
+- Token rotation
+- Dependency scanning
+- Secrets rotation
+- DDoS protection
+- Encryption at rest
 
 **Compliance & Privacy**
 
-* Right to be forgotten
-* Consent management
+- Right to be forgotten
+- Consent management
 
 **Internationalization**
 
-* Translation workflows
-* Date handling
-* Time handling
-* Timezone handling
+- Translation workflows
+- Date handling
+- Time handling
+- Timezone handling
 
 **Admin & Operations**
 
-* Customer support workflows
-* Ticketing integration
-* Knowledge base
+- Customer support workflows
+- Ticketing integration
+- Knowledge base
 
 **Testing & QA**
 
-* Chaos testing
+- Chaos testing
 
 **Incident Management**
 
-* Maintenance windows
+- Maintenance windows
 
 **Process & Documentation**
 
-* RFC process
+- RFC process
 
 ---
 
@@ -405,87 +406,87 @@ The product meets regulatory, privacy, and compliance requirements. Data residen
 
 **Compliance & Privacy**
 
-* GDPR / CCPA flows
-* Data residency
-* Data anonymization
-* Retention & deletion schedules
-* Data processing agreements (DPAs)
-* Incident disclosure process
-* SOC2 controls mapping
-* Access reviews
+- GDPR / CCPA flows
+- Data residency
+- Data anonymization
+- Retention & deletion schedules
+- Data processing agreements (DPAs)
+- Incident disclosure process
+- SOC2 controls mapping
+- Access reviews
 
 **Security**
 
-* Zero-trust assumptions
-* Audit trails everywhere
-* Pen test reports
-* Vulnerability disclosure policy
-* Content Security Policy
+- Zero-trust assumptions
+- Audit trails everywhere
+- Pen test reports
+- Vulnerability disclosure policy
+- Content Security Policy
 
 **Internationalization**
 
-* RTL languages
-* Currency support
-* Locale-based sorting
-* Feature availability by region
-* Legal text per region
+- RTL languages
+- Currency support
+- Locale-based sorting
+- Feature availability by region
+- Legal text per region
 
 **Analytics & Product Metrics**
 
-* A/B testing
-* North star metrics
-* Data warehouse
+- A/B testing
+- North star metrics
+- Data warehouse
 
 **Integrations**
 
-* Third-party integrations
-* SDK for third-party developers
+- Third-party integrations
+- SDK for third-party developers
 
 **User Features**
 
-* User-published pages (Notion-style)
-* User feature request board
+- User-published pages (Notion-style)
+- User feature request board
 
 **Admin & Operations**
 
-* Admin dashboard
-* Impersonation
-* SLA tracking
-* Cost controls
+- Admin dashboard
+- Impersonation
+- SLA tracking
+- Cost controls
 
 **Payments & Billing**
 
-* Taxes
-* Dunning
-* Referrals
+- Taxes
+- Dunning
+- Referrals
 
 **Collaboration & Real-time**
 
-* CRDT / Operational Transformation
-* Decentralized / offline-first sync
+- CRDT / Operational Transformation
+- Decentralized / offline-first sync
 
 **Infrastructure**
 
-* Multi-region active-active
-* Low-latency replication
-* Cold start mitigation
+- Multi-region active-active
+- Low-latency replication
+- Cold start mitigation
 
 **Advanced Architecture**
 
-* Formal verification for critical scheduling / recurrence engine
-* Vendor lock-in migration plan
-* Documented scalability limits
+- Formal verification for critical scheduling / recurrence engine
+- Vendor lock-in migration plan
+- Documented scalability limits
 
 **Process & Documentation**
 
-* Release notes automation
+- Release notes automation
 
 ---
 
 ## Cross-Cutting (All Phases, Increasing Bar)
 
-* Testing & QA
-* Security
-* Observability
-* Backup & Recovery
-* Documentation
+- Testing & QA
+- Security
+- Observability
+- Backup & Recovery
+- Documentation

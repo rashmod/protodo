@@ -1,15 +1,18 @@
 # Production todo app
 
 ## Goal
+
 my goal for this exercise is taking something simple and mundane like a todo list application that anyone can make and does not inherently have much complexity to it and then attach as many things we can to it for learning to mock a real company with a real product in production. assume a multi billion dollar saas or a similar company
 
 ## AI & Smart Features
+
 - ai integration
 - Natural language input parsing
 - auto-categorization
 - summarize tasks
 
 ## Payments & Billing
+
 - payment integration
 - free vs paid users
 - usage limits
@@ -24,6 +27,7 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - coupons
 
 ## Background Processing & Notifications
+
 - queues for background tasks
 - reminders
 - email notification
@@ -33,23 +37,26 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - Backpressure handling
 
 ## Multi-tenancy
+
 - multi tenancy support
-  - sharding strategy
+    - sharding strategy
 
 ## Authentication & Authorization
+
 - production grade authentication
-  - email password
-  - oauth
-  - magic links
-  - mfa
-  - session management
-  - token rotation
-  - rbac and abac
-  - org/workspace
-  - invite flow
-  - audit logs
+    - email password
+    - oauth
+    - magic links
+    - mfa
+    - session management
+    - token rotation
+    - rbac and abac
+    - org/workspace
+    - invite flow
+    - audit logs
 
 ## Frontend
+
 - component design system
 - frontend theming
 - accessibility
@@ -64,6 +71,7 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - Performance: lazy-loading, virtualization for long lists, debounced searches.
 
 ## API
+
 - rest api
 - graphql api
 - api versioning
@@ -75,13 +83,16 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - graceful deprecation paths
 
 ## Feature Management
+
 - feature flag use
 - feature kill switches
 
 ## Data Management
+
 - soft and hard deletes
 
 ## Storage & Databases
+
 - storage → cold storage
 - relational db
 - nosql db
@@ -95,13 +106,15 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - hot partitions
 
 ## Backup & Recovery
+
 - backup and restore
-  - user level data backup and restore
-  - system automated backups and tested restore procedures
+    - user level data backup and restore
+    - system automated backups and tested restore procedures
 - data migration
 - data retention policy
 
 ## Infrastructure & Deployment
+
 - multi env setup
 - kubernetes
 - pr preview deployments
@@ -117,6 +130,7 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - cold start mitigation
 
 ## Observability & Monitoring
+
 - structured logging
 - metrics (RED, USE)
 - tracing
@@ -129,6 +143,7 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - error budget policies
 
 ## Testing & Quality Assurance
+
 - linting
 - testing
 - load testing
@@ -136,14 +151,16 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - build pipelines
 
 ## Incident Management
+
 - incident management
 - postmortems
 - maintenance windows
 - status page
 
 ## Security
+
 - secrets management
-  - secrets rotation
+    - secrets rotation
 - threat modeling
 - input sanitization
 - CSRF / XSS / SQLi protection
@@ -158,6 +175,7 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - content security policy
 
 ## Compliance & Privacy
+
 - gdpr (right to be forgotten)
 - gdpr / ccpa flows
 - data residency
@@ -172,6 +190,7 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - data anonymization
 
 ## Internationalization
+
 - internationlization
 - rtl languages
 - date/time/timezone handling
@@ -182,6 +201,7 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - legal text per region
 
 ## Analytics & Product Metrics
+
 - event tracking
 - funnels
 - cohort analysis
@@ -194,6 +214,7 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - data warehouse
 
 ## Admin & Operations
+
 - admin dashboard
 - impersonation
 - customer support workflows
@@ -203,6 +224,7 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - cost controls
 
 ## Collaboration & Real-time
+
 - collaboration
 - realtime presence
 - offline sync conflict resolution
@@ -210,12 +232,14 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - Decentralized/offline-first architecture (replication & peer sync).
 
 ## Integrations
+
 - third party integration in the app
 - sdk for third party integration
 - calendar integrations
 - import/export (csv, json, xml)
 
 ## User Features
+
 - user published pages like notion
 - templates or workflows
 - changelog ux
@@ -224,15 +248,18 @@ my goal for this exercise is taking something simple and mundane like a todo lis
 - user feature request board
 
 ## Reliability & Resilience
+
 - circuit breakers
 - graceful degradation
 
 ## Advanced Architecture
+
 - Formal verification for critical scheduling / recurrence engine.
 - vendor lock in migration plan
 - scalability limits
 
 ## Process & Documentation
+
 - rfc process
 - architecture diagram
 - release notes automation

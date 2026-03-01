@@ -5,12 +5,14 @@
 These features are specific to a todo list application and its core functionality.
 
 ### AI & Smart Features
+
 - ai integration
 - Natural language input parsing
 - auto-categorization
 - summarize tasks
 
 ### User Features
+
 - user published pages like notion
 - templates or workflows
 - changelog ux
@@ -19,12 +21,14 @@ These features are specific to a todo list application and its core functionalit
 - user feature request board
 
 ### Integrations
+
 - third party integration in the app
 - sdk for third party integration
 - calendar integrations
 - import/export (csv, json, xml)
 
 ### Collaboration & Real-time
+
 - collaboration
 - realtime presence
 - offline sync conflict resolution
@@ -32,6 +36,7 @@ These features are specific to a todo list application and its core functionalit
 - Decentralized/offline-first architecture (replication & peer sync).
 
 ### Frontend (App-Specific)
+
 - Performance: lazy-loading, virtualization for long lists, debounced searches.
 
 ---
@@ -41,6 +46,7 @@ These features are specific to a todo list application and its core functionalit
 These are general production engineering concerns that apply to any SaaS application in production.
 
 ### Payments & Billing
+
 - payment integration
 - free vs paid users
 - usage limits
@@ -55,6 +61,7 @@ These are general production engineering concerns that apply to any SaaS applica
 - coupons
 
 ### Background Processing & Notifications
+
 - queues for background tasks
 - reminders
 - email notification
@@ -64,23 +71,26 @@ These are general production engineering concerns that apply to any SaaS applica
 - Backpressure handling
 
 ### Multi-tenancy
+
 - multi tenancy support
-  - sharding strategy
+    - sharding strategy
 
 ### Authentication & Authorization
+
 - production grade authentication
-  - email password
-  - oauth
-  - magic links
-  - mfa
-  - session management
-  - token rotation
-  - rbac and abac
-  - org/workspace
-  - invite flow
-  - audit logs
+    - email password
+    - oauth
+    - magic links
+    - mfa
+    - session management
+    - token rotation
+    - rbac and abac
+    - org/workspace
+    - invite flow
+    - audit logs
 
 ### Frontend (General)
+
 - component design system
 - frontend theming
 - accessibility
@@ -94,6 +104,7 @@ These are general production engineering concerns that apply to any SaaS applica
 - optimistic updates
 
 ### API
+
 - rest api
 - graphql api
 - api versioning
@@ -105,13 +116,16 @@ These are general production engineering concerns that apply to any SaaS applica
 - graceful deprecation paths
 
 ### Feature Management
+
 - feature flag use
 - feature kill switches
 
 ### Data Management
+
 - soft and hard deletes
 
 ### Storage & Databases
+
 - storage → cold storage
 - relational db
 - nosql db
@@ -125,13 +139,15 @@ These are general production engineering concerns that apply to any SaaS applica
 - hot partitions
 
 ### Backup & Recovery
+
 - backup and restore
-  - user level data backup and restore
-  - system automated backups and tested restore procedures
+    - user level data backup and restore
+    - system automated backups and tested restore procedures
 - data migration
 - data retention policy
 
 ### Infrastructure & Deployment
+
 - multi env setup
 - kubernetes
 - pr preview deployments
@@ -147,6 +163,7 @@ These are general production engineering concerns that apply to any SaaS applica
 - cold start mitigation
 
 ### Observability & Monitoring
+
 - structured logging
 - metrics (RED, USE)
 - tracing
@@ -159,6 +176,7 @@ These are general production engineering concerns that apply to any SaaS applica
 - error budget policies
 
 ### Testing & Quality Assurance
+
 - linting
 - testing
 - load testing
@@ -166,14 +184,16 @@ These are general production engineering concerns that apply to any SaaS applica
 - build pipelines
 
 ### Incident Management
+
 - incident management
 - postmortems
 - maintenance windows
 - status page
 
 ### Security
+
 - secrets management
-  - secrets rotation
+    - secrets rotation
 - threat modeling
 - input sanitization
 - CSRF / XSS / SQLi protection
@@ -188,6 +208,7 @@ These are general production engineering concerns that apply to any SaaS applica
 - content security policy
 
 ### Compliance & Privacy
+
 - gdpr (right to be forgotten)
 - gdpr / ccpa flows
 - data residency
@@ -202,6 +223,7 @@ These are general production engineering concerns that apply to any SaaS applica
 - data anonymization
 
 ### Internationalization
+
 - internationlization
 - rtl languages
 - date/time/timezone handling
@@ -212,6 +234,7 @@ These are general production engineering concerns that apply to any SaaS applica
 - legal text per region
 
 ### Analytics & Product Metrics
+
 - event tracking
 - funnels
 - cohort analysis
@@ -224,6 +247,7 @@ These are general production engineering concerns that apply to any SaaS applica
 - data warehouse
 
 ### Admin & Operations
+
 - admin dashboard
 - impersonation
 - customer support workflows
@@ -233,15 +257,18 @@ These are general production engineering concerns that apply to any SaaS applica
 - cost controls
 
 ### Reliability & Resilience
+
 - circuit breakers
 - graceful degradation
 
 ### Advanced Architecture
+
 - Formal verification for critical scheduling / recurrence engine.
 - vendor lock in migration plan
 - scalability limits
 
 ### Process & Documentation
+
 - rfc process
 - architecture diagram
 - release notes automation

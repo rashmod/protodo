@@ -6,89 +6,89 @@
 
 ## Authentication & Authorization
 
-* [ ] Email + password signup
-* [ ] User/account domain model
-* [ ] Account lifecycle rules (active/disabled/recovery states)
-* [ ] Password hashing
-* [ ] Login flow
-* [ ] Session creation
-* [ ] Session persistence
-* [ ] Session inventory (list active sessions/devices)
-* [ ] Session invalidation (logout)
-* [ ] Session invalidation (logout all devices)
-* [ ] Forced session revocation rules (password reset/account disable)
-* [ ] Password recovery flow
-* [ ] Password recovery anti-enumeration behavior
-* [ ] Password recovery abuse controls (rate limits/lockouts)
-* [ ] Enforce single-user model
-* [ ] Explicitly block org/workspace creation
-* [ ] Explicitly block RBAC
-* [ ] Explicitly block ABAC
-* [ ] Explicitly block OAuth
-* [ ] Explicitly block magic links
-* [ ] No audit logging
+- [ ] Email + password signup
+- [ ] User/account domain model
+- [ ] Account lifecycle rules (active/disabled/recovery states)
+- [ ] Password hashing
+- [ ] Login flow
+- [ ] Session creation
+- [ ] Session persistence
+- [ ] Session inventory (list active sessions/devices)
+- [ ] Session invalidation (logout)
+- [ ] Session invalidation (logout all devices)
+- [ ] Forced session revocation rules (password reset/account disable)
+- [ ] Password recovery flow
+- [ ] Password recovery anti-enumeration behavior
+- [ ] Password recovery abuse controls (rate limits/lockouts)
+- [ ] Enforce single-user model
+- [ ] Explicitly block org/workspace creation
+- [ ] Explicitly block RBAC
+- [ ] Explicitly block ABAC
+- [ ] Explicitly block OAuth
+- [ ] Explicitly block magic links
+- [ ] No audit logging
 
 ## Core Product
 
-* [ ] Create task
-* [ ] Edit task
-* [ ] Complete task
-* [ ] Delete task
-* [ ] List tasks
-* [ ] Basic reminders (best-effort)
-* [ ] Explicitly ensure collaboration is not possible
+- [ ] Create task
+- [ ] Edit task
+- [ ] Complete task
+- [ ] Delete task
+- [ ] List tasks
+- [ ] Basic reminders (best-effort)
+- [ ] Explicitly ensure collaboration is not possible
 
 ## API
 
-* [ ] REST API
-* [ ] Pagination
-* [ ] Input validation
-* [ ] Explicitly no API versioning guarantees
+- [ ] REST API
+- [ ] Pagination
+- [ ] Input validation
+- [ ] Explicitly no API versioning guarantees
 
 ## Frontend
 
-* [ ] Responsive layout
-* [ ] Task CRUD UI
-* [ ] Error boundaries
-* [ ] Basic client-side caching
+- [ ] Responsive layout
+- [ ] Task CRUD UI
+- [ ] Error boundaries
+- [ ] Basic client-side caching
 
 ## Data Management
 
-* [ ] Soft deletes
-* [ ] Soft delete visibility rules
+- [ ] Soft deletes
+- [ ] Soft delete visibility rules
 
 ## Storage & Databases
 
-* [ ] Relational database
-* [ ] Single-region deployment
+- [ ] Relational database
+- [ ] Single-region deployment
 
 ## Infrastructure & Deployment
 
-* [ ] Single environment
-* [ ] Manual deployments
-* [ ] Explicitly no zero-downtime requirement
+- [ ] Single environment
+- [ ] Manual deployments
+- [ ] Explicitly no zero-downtime requirement
 
 ## Security
 
-* [ ] TLS
-* [ ] Input sanitization
-* [ ] CSRF protection
-* [ ] XSS protection
-* [ ] SQL injection protection
+- [ ] TLS
+- [ ] Input sanitization
+- [ ] CSRF protection
+- [ ] XSS protection
+- [ ] SQL injection protection
 
 ## Backup & Recovery
 
-* [ ] Basic backups
-* [ ] Manual restore procedure
+- [ ] Basic backups
+- [ ] Manual restore procedure
 
 ## Testing & QA
 
-* [ ] Linting
-* [ ] Unit tests
+- [ ] Linting
+- [ ] Unit tests
 
 ## Observability
 
-* [ ] Minimal application logging
+- [ ] Minimal application logging
 
 ---
 
@@ -96,82 +96,82 @@
 
 ## Multi-Tenancy
 
-* [ ] Organization model
-* [ ] Workspace model
-* [ ] Tenant isolation enforcement
-* [ ] Sharding strategy documented
+- [ ] Organization model
+- [ ] Workspace model
+- [ ] Tenant isolation enforcement
+- [ ] Sharding strategy documented
 
 ## Authentication & Authorization
 
-* [ ] Invite flow
-* [ ] Organization membership
-* [ ] Role definitions
-* [ ] RBAC enforcement
-* [ ] Authorization semantics with org membership effects
-* [ ] Session revocation on org membership/role changes
-* [ ] Suspicious login signal logging (IP/device anomalies)
-* [ ] Suspicious login handling policy (re-auth/temporary restrictions)
-* [ ] Audit logs — authentication events
-* [ ] Audit logs — data mutations
+- [ ] Invite flow
+- [ ] Organization membership
+- [ ] Role definitions
+- [ ] RBAC enforcement
+- [ ] Authorization semantics with org membership effects
+- [ ] Session revocation on org membership/role changes
+- [ ] Suspicious login signal logging (IP/device anomalies)
+- [ ] Suspicious login handling policy (re-auth/temporary restrictions)
+- [ ] Audit logs — authentication events
+- [ ] Audit logs — data mutations
 
 ## Background Processing & Notifications
 
-* [ ] Background job queue
-* [ ] Async reminders
-* [ ] Email notifications
-* [ ] Retry strategies
+- [ ] Background job queue
+- [ ] Async reminders
+- [ ] Email notifications
+- [ ] Retry strategies
 
 ## API
 
-* [ ] Sorting
-* [ ] Filtering
-* [ ] Coarse rate limiting
-* [ ] Idempotent write endpoints
-* [ ] Basic webhook delivery
+- [ ] Sorting
+- [ ] Filtering
+- [ ] Coarse rate limiting
+- [ ] Idempotent write endpoints
+- [ ] Basic webhook delivery
 
 ## Frontend
 
-* [ ] Optimistic UI updates
-* [ ] Accessibility baseline
-* [ ] Frontend telemetry
-* [ ] Bug report UI
+- [ ] Optimistic UI updates
+- [ ] Accessibility baseline
+- [ ] Frontend telemetry
+- [ ] Bug report UI
 
 ## Analytics & Product Metrics
 
-* [ ] Event tracking
+- [ ] Event tracking
 
 ## Integrations
 
-* [ ] Import CSV
-* [ ] Import JSON
-* [ ] Import XML
-* [ ] Export CSV
-* [ ] Export JSON
-* [ ] Export XML
+- [ ] Import CSV
+- [ ] Import JSON
+- [ ] Import XML
+- [ ] Export CSV
+- [ ] Export JSON
+- [ ] Export XML
 
 ## Process & Documentation
 
-* [ ] Architecture diagrams
+- [ ] Architecture diagrams
 
 ## Infrastructure
 
-* [ ] Dev environment
-* [ ] Prod environment
-* [ ] Build pipelines
-* [ ] Repeatable deployments
+- [ ] Dev environment
+- [ ] Prod environment
+- [ ] Build pipelines
+- [ ] Repeatable deployments
 
 ## Security
 
-* [ ] Secrets management
+- [ ] Secrets management
 
 ## Observability
 
-* [ ] Structured logging
-* [ ] Basic metrics
+- [ ] Structured logging
+- [ ] Basic metrics
 
 ## Backup & Recovery
 
-* [ ] Data migration tooling
+- [ ] Data migration tooling
 
 ---
 
@@ -179,111 +179,111 @@
 
 ## Payments & Billing
 
-* [ ] Subscription creation
-* [ ] Subscription upgrade
-* [ ] Subscription downgrade
-* [ ] Subscription cancellation
-* [ ] Free vs paid enforcement
-* [ ] Usage limits
-* [ ] Feature gating
-* [ ] Invoices
-* [ ] Receipts
-* [ ] Proration
-* [ ] Coupons
-* [ ] Billing webhooks
+- [ ] Subscription creation
+- [ ] Subscription upgrade
+- [ ] Subscription downgrade
+- [ ] Subscription cancellation
+- [ ] Free vs paid enforcement
+- [ ] Usage limits
+- [ ] Feature gating
+- [ ] Invoices
+- [ ] Receipts
+- [ ] Proration
+- [ ] Coupons
+- [ ] Billing webhooks
 
 ## AI & Smart Features
 
-* [ ] AI integration layer
-* [ ] Task summarization
-* [ ] Natural language input parsing
-* [ ] Auto-categorization
+- [ ] AI integration layer
+- [ ] Task summarization
+- [ ] Natural language input parsing
+- [ ] Auto-categorization
 
 ## Authentication & Authorization
 
-* [ ] OAuth provider integration (at least one provider)
-* [ ] Magic links
+- [ ] OAuth provider integration (at least one provider)
+- [ ] Magic links
 
 ## Feature Management
 
-* [ ] Feature flags
-* [ ] Feature kill switches
+- [ ] Feature flags
+- [ ] Feature kill switches
 
 ## Background Processing
 
-* [ ] Event-driven architecture
-* [ ] Dead letter queues
-* [ ] Backpressure handling
+- [ ] Event-driven architecture
+- [ ] Dead letter queues
+- [ ] Backpressure handling
 
 ## API
 
-* [ ] API versioning
-* [ ] Graceful deprecation paths
-* [ ] GraphQL API
+- [ ] API versioning
+- [ ] Graceful deprecation paths
+- [ ] GraphQL API
 
 ## Data Management
 
-* [ ] Hard delete policies
-* [ ] Hard delete execution
+- [ ] Hard delete policies
+- [ ] Hard delete execution
 
 ## Storage & Databases
 
-* [ ] Caching layer
-* [ ] Read/write splitting
-* [ ] Point-in-time recovery
-* [ ] File storage
-* [ ] NoSQL database usage
+- [ ] Caching layer
+- [ ] Read/write splitting
+- [ ] Point-in-time recovery
+- [ ] File storage
+- [ ] NoSQL database usage
 
 ## Observability & Monitoring
 
-* [ ] Monitoring dashboards
-* [ ] Distributed tracing
-* [ ] Error tracking
-* [ ] RED metrics
-* [ ] USE metrics
-* [ ] Alerting rules
-* [ ] On-call rotation
+- [ ] Monitoring dashboards
+- [ ] Distributed tracing
+- [ ] Error tracking
+- [ ] RED metrics
+- [ ] USE metrics
+- [ ] Alerting rules
+- [ ] On-call rotation
 
 ## Analytics & Product Metrics
 
-* [ ] Funnels
-* [ ] Cohort analysis
-* [ ] Feature adoption metrics
-* [ ] Churn tracking
-* [ ] Retention curves
-* [ ] Product metrics
+- [ ] Funnels
+- [ ] Cohort analysis
+- [ ] Feature adoption metrics
+- [ ] Churn tracking
+- [ ] Retention curves
+- [ ] Product metrics
 
 ## User Features
 
-* [ ] Onboarding flow
-* [ ] Templates / workflows
-* [ ] User feedback mechanism
-* [ ] Changelog UX
+- [ ] Onboarding flow
+- [ ] Templates / workflows
+- [ ] User feedback mechanism
+- [ ] Changelog UX
 
 ## Integrations
 
-* [ ] Calendar integrations
+- [ ] Calendar integrations
 
 ## Security
 
-* [ ] Threat modeling
+- [ ] Threat modeling
 
 ## Compliance & Privacy
 
-* [ ] Privacy policy
-* [ ] Terms of service
-* [ ] Data retention policy
+- [ ] Privacy policy
+- [ ] Terms of service
+- [ ] Data retention policy
 
 ## Testing & QA
 
-* [ ] Integration tests
-* [ ] Load testing
+- [ ] Integration tests
+- [ ] Load testing
 
 ## Incident Management
 
-* [ ] Incident response process
-* [ ] Postmortems
-* [ ] Status page
+- [ ] Incident response process
+- [ ] Postmortems
+- [ ] Status page
 
 ---
 
@@ -291,105 +291,104 @@
 
 ## Infrastructure & Deployment
 
-* [ ] Kubernetes
-* [ ] Autoscaling
-* [ ] Load balancers
-* [ ] CDN
-* [ ] Blue/green deployments
-* [ ] Canary deployments
-* [ ] Zero-downtime deployments
-* [ ] Zero-downtime migrations
-* [ ] Rollback strategies
-* [ ] PR preview deployments
-* [ ] Infrastructure as Code
-* [ ] Bring-your-own-infra support
+- [ ] Kubernetes
+- [ ] Autoscaling
+- [ ] Load balancers
+- [ ] CDN
+- [ ] Blue/green deployments
+- [ ] Canary deployments
+- [ ] Zero-downtime deployments
+- [ ] Zero-downtime migrations
+- [ ] Rollback strategies
+- [ ] PR preview deployments
+- [ ] Infrastructure as Code
+- [ ] Bring-your-own-infra support
 
 ## Storage & Databases
 
-* [ ] Search index
-* [ ] Cold storage
-* [ ] Index bloat management
-* [ ] Index vacuuming
-* [ ] Hot user detection
-* [ ] Hot partition mitigation
+- [ ] Search index
+- [ ] Cold storage
+- [ ] Index bloat management
+- [ ] Index vacuuming
+- [ ] Hot user detection
+- [ ] Hot partition mitigation
 
 ## Authentication & Authorization
 
-* [ ] ABAC (Attribute-Based Access Control)
-
-  * [ ] Policy evaluation engine
-  * [ ] Attribute-based rules
-  * [ ] RBAC coexistence
+- [ ] ABAC (Attribute-Based Access Control)
+    - [ ] Policy evaluation engine
+    - [ ] Attribute-based rules
+    - [ ] RBAC coexistence
 
 ## Frontend
 
-* [ ] Component design system
-* [ ] Frontend theming
-* [ ] Offline support
-* [ ] Performance budgets (LCP, CLS)
-* [ ] Lazy loading
-* [ ] List virtualization
-* [ ] Debounced searches
+- [ ] Component design system
+- [ ] Frontend theming
+- [ ] Offline support
+- [ ] Performance budgets (LCP, CLS)
+- [ ] Lazy loading
+- [ ] List virtualization
+- [ ] Debounced searches
 
 ## Collaboration & Real-Time
 
-* [ ] Explicit collaboration features
-* [ ] Realtime presence
-* [ ] Offline sync (non-CRDT)
-* [ ] Conflict resolution
+- [ ] Explicit collaboration features
+- [ ] Realtime presence
+- [ ] Offline sync (non-CRDT)
+- [ ] Conflict resolution
 
 ## Reliability & Resilience
 
-* [ ] Circuit breakers
-* [ ] Graceful degradation
+- [ ] Circuit breakers
+- [ ] Graceful degradation
 
 ## Observability
 
-* [ ] SLOs
-* [ ] SLIs
-* [ ] Error budgets
-* [ ] Performance monitoring
-* [ ] Cost monitoring
-* [ ] Runbooks
+- [ ] SLOs
+- [ ] SLIs
+- [ ] Error budgets
+- [ ] Performance monitoring
+- [ ] Cost monitoring
+- [ ] Runbooks
 
 ## Security
 
-* [ ] MFA
-* [ ] Token rotation
-* [ ] Dependency scanning
-* [ ] Secrets rotation
-* [ ] DDoS protection
-* [ ] Encryption at rest
+- [ ] MFA
+- [ ] Token rotation
+- [ ] Dependency scanning
+- [ ] Secrets rotation
+- [ ] DDoS protection
+- [ ] Encryption at rest
 
 ## Compliance & Privacy
 
-* [ ] Right to be forgotten
-* [ ] Consent management
+- [ ] Right to be forgotten
+- [ ] Consent management
 
 ## Internationalization
 
-* [ ] Translation workflows
-* [ ] Date handling
-* [ ] Time handling
-* [ ] Timezone handling
+- [ ] Translation workflows
+- [ ] Date handling
+- [ ] Time handling
+- [ ] Timezone handling
 
 ## Admin & Operations
 
-* [ ] Customer support workflows
-* [ ] Ticketing integration
-* [ ] Knowledge base
+- [ ] Customer support workflows
+- [ ] Ticketing integration
+- [ ] Knowledge base
 
 ## Testing & QA
 
-* [ ] Chaos testing
+- [ ] Chaos testing
 
 ## Incident Management
 
-* [ ] Maintenance windows
+- [ ] Maintenance windows
 
 ## Process & Documentation
 
-* [ ] RFC process
+- [ ] RFC process
 
 ---
 
@@ -397,78 +396,78 @@
 
 ## Compliance & Privacy
 
-* [ ] GDPR flows
-* [ ] CCPA flows
-* [ ] Data residency
-* [ ] Data anonymization
-* [ ] Retention & deletion schedules
-* [ ] Data processing agreements
-* [ ] Incident disclosure process
-* [ ] SOC2 controls mapping
-* [ ] Access reviews
+- [ ] GDPR flows
+- [ ] CCPA flows
+- [ ] Data residency
+- [ ] Data anonymization
+- [ ] Retention & deletion schedules
+- [ ] Data processing agreements
+- [ ] Incident disclosure process
+- [ ] SOC2 controls mapping
+- [ ] Access reviews
 
 ## Security
 
-* [ ] Zero-trust assumptions
-* [ ] Comprehensive audit trails
-* [ ] Pen test reports
-* [ ] Vulnerability disclosure policy
-* [ ] Content Security Policy
+- [ ] Zero-trust assumptions
+- [ ] Comprehensive audit trails
+- [ ] Pen test reports
+- [ ] Vulnerability disclosure policy
+- [ ] Content Security Policy
 
 ## Internationalization
 
-* [ ] RTL language support
-* [ ] Currency support
-* [ ] Locale-based sorting
-* [ ] Feature availability by region
-* [ ] Legal text per region
+- [ ] RTL language support
+- [ ] Currency support
+- [ ] Locale-based sorting
+- [ ] Feature availability by region
+- [ ] Legal text per region
 
 ## Analytics & Product Metrics
 
-* [ ] A/B testing
-* [ ] North star metrics
-* [ ] Data warehouse
+- [ ] A/B testing
+- [ ] North star metrics
+- [ ] Data warehouse
 
 ## Integrations
 
-* [ ] Third-party integrations
-* [ ] Public SDK
+- [ ] Third-party integrations
+- [ ] Public SDK
 
 ## User Features
 
-* [ ] User-published pages (Notion-style)
-* [ ] User feature request board
+- [ ] User-published pages (Notion-style)
+- [ ] User feature request board
 
 ## Admin & Operations
 
-* [ ] Admin dashboard
-* [ ] Impersonation
-* [ ] SLA tracking
-* [ ] Cost controls
+- [ ] Admin dashboard
+- [ ] Impersonation
+- [ ] SLA tracking
+- [ ] Cost controls
 
 ## Payments & Billing
 
-* [ ] Taxes
-* [ ] Dunning
-* [ ] Referrals
+- [ ] Taxes
+- [ ] Dunning
+- [ ] Referrals
 
 ## Collaboration & Real-Time
 
-* [ ] CRDT / Operational Transformation
-* [ ] Decentralized offline-first sync
+- [ ] CRDT / Operational Transformation
+- [ ] Decentralized offline-first sync
 
 ## Infrastructure
 
-* [ ] Multi-region active-active
-* [ ] Low-latency replication
-* [ ] Cold start mitigation
+- [ ] Multi-region active-active
+- [ ] Low-latency replication
+- [ ] Cold start mitigation
 
 ## Advanced Architecture
 
-* [ ] Formal verification (critical scheduling / recurrence engine)
-* [ ] Vendor lock-in migration plan
-* [ ] Documented scalability limits
+- [ ] Formal verification (critical scheduling / recurrence engine)
+- [ ] Vendor lock-in migration plan
+- [ ] Documented scalability limits
 
 ## Process & Documentation
 
-* [ ] Release notes automation
+- [ ] Release notes automation

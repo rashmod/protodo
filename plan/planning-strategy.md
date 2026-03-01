@@ -9,7 +9,6 @@ The goal is to simulate how a real SaaS company ships, operates, and evolves its
 
 ---
 
-
 ## Phase 1 — MVP (Foundational Product)
 
 **Audience**
@@ -20,22 +19,22 @@ A user can sign up, authenticate, create, edit, complete, and delete tasks. Data
 
 **Scale assumptions**
 
-* Total users: ≤ 100
-* Daily active users: ≤ 20
-* Workspaces: single-user only
+- Total users: ≤ 100
+- Daily active users: ≤ 20
+- Workspaces: single-user only
 
 **Usage patterns**
 
-* Mostly synchronous requests
-* Low write volume
-* No concurrent edits
-* Minimal background jobs
+- Mostly synchronous requests
+- Low write volume
+- No concurrent edits
+- Minimal background jobs
 
 **Operational expectations**
 
-* Manual deployments
-* Downtime acceptable
-* Data loss not acceptable
+- Manual deployments
+- Downtime acceptable
+- Data loss not acceptable
 
 ---
 
@@ -49,21 +48,21 @@ Multiple users collaborate inside shared workspaces. Users can invite others, ma
 
 **Scale assumptions**
 
-* Total users: ≤ 1,000
-* Daily active users: ≤ 300
-* Workspaces: ≤ 200
+- Total users: ≤ 1,000
+- Daily active users: ≤ 300
+- Workspaces: ≤ 200
 
 **Usage patterns**
 
-* Increased read and write volume
-* Background jobs for invitations and notifications
-* Occasional concurrent edits
+- Increased read and write volume
+- Background jobs for invitations and notifications
+- Occasional concurrent edits
 
 **Operational expectations**
 
-* Repeatable deployments
-* Basic logging and metrics
-* Manual incident handling
+- Repeatable deployments
+- Basic logging and metrics
+- Manual incident handling
 
 ---
 
@@ -77,21 +76,21 @@ The product enforces plans, limits, and billing. Core workflows operate reliably
 
 **Scale assumptions**
 
-* Total users: ≤ 50,000
-* Daily active users: ≤ 10,000
-* Workspaces: ≤ 10,000
+- Total users: ≤ 50,000
+- Daily active users: ≤ 10,000
+- Workspaces: ≤ 10,000
 
 **Usage patterns**
 
-* High read volume, moderate write volume
-* Continuous background processing
-* Active integrations and webhooks
+- High read volume, moderate write volume
+- Continuous background processing
+- Active integrations and webhooks
 
 **Operational expectations**
 
-* Automated deployments
-* Monitoring and alerting
-* Defined on-call process
+- Automated deployments
+- Monitoring and alerting
+- Defined on-call process
 
 ---
 
@@ -105,21 +104,21 @@ The system scales horizontally without performance degradation. Deployments occu
 
 **Scale assumptions**
 
-* Total users: ≤ 500,000
-* Daily active users: ≤ 100,000
-* Workspaces: ≤ 100,000
+- Total users: ≤ 500,000
+- Daily active users: ≤ 100,000
+- Workspaces: ≤ 100,000
 
 **Usage patterns**
 
-* Heavy concurrent access
-* Large datasets per tenant
-* High background job throughput
+- Heavy concurrent access
+- Large datasets per tenant
+- High background job throughput
 
 **Operational expectations**
 
-* Zero-downtime deployments
-* Autoscaling enabled
-* Formal incident management
+- Zero-downtime deployments
+- Autoscaling enabled
+- Formal incident management
 
 ---
 
@@ -133,18 +132,18 @@ The product meets regulatory, privacy, and compliance requirements. Data residen
 
 **Scale assumptions**
 
-* Total users: millions
-* Daily active users: hundreds of thousands
-* Workspaces: hundreds of thousands
+- Total users: millions
+- Daily active users: hundreds of thousands
+- Workspaces: hundreds of thousands
 
 **Usage patterns**
 
-* Global traffic distribution
-* Strict latency expectations
-* High API and integration usage
+- Global traffic distribution
+- Strict latency expectations
+- High API and integration usage
 
 **Operational expectations**
 
-* Multi-region deployments
-* Compliance-driven operations
-* Guaranteed SLAs
+- Multi-region deployments
+- Compliance-driven operations
+- Guaranteed SLAs
