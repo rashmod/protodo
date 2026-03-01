@@ -1,3 +1,11 @@
 packages:
-  - "apps/*"
-  - "packages/*"
+    - 'apps/*'
+    - 'packages/*'
+    - 'tooling/*'
+
+catalog:
+    'prettier': '^3.7.4'
+
+publicHoistPattern:
+    - '@ianvs/prettier-plugin-sort-imports'
+    - prettier-plugin-tailwindcss
