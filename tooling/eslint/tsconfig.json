@@ -1,0 +1,5 @@
+{
+    "extends": "@protodo/tsconfig/base.json",
+    "include": ["."],
+    "exclude": ["node_modules"]
+}

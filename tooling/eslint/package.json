@@ -1,0 +1,20 @@
+{
+    "name": "@protodo/eslint-config",
+    "private": true,
+    "type": "module",
+    "exports": {},
+    "devDependencies": {
+        "@protodo/prettier-config": "workspace:*",
+        "@protodo/tsconfig": "workspace:*",
+        "@eslint/compat": "^2.0.2",
+        "@eslint/js": "catalog:",
+        "@types/node": "catalog:",
+        "eslint": "catalog:",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-turbo": "2.5.8",
+        "prettier": "catalog:",
+        "typescript": "catalog:",
+        "typescript-eslint": "^8.56.1"
+    },
+    "prettier": "@protodo/prettier-config"
+}
