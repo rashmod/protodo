@@ -1,7 +1,7 @@
-import { defineConfig } from 'eslint/config'
-import reactHooks from 'eslint-plugin-react-hooks'
-import reactPlugin from 'eslint-plugin-react'
-import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+import reactPlugin from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import { defineConfig } from 'eslint/config';
 
 export const reactConfig = defineConfig(
     {
@@ -24,4 +24,4 @@ export const reactConfig = defineConfig(
         },
     },
     reactHooks.configs.flat['recommended-latest']!
-)
+);

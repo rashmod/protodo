@@ -6,8 +6,8 @@
         "build": "turbo run build",
         "dev": "turbo run dev",
         "lint": "turbo run lint",
-        "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md}\"",
-        "check-types": "turbo run check-types"
+        "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+        "typecheck": "turbo run typecheck"
     },
     "devDependencies": {
         "@protodo/prettier-config": "workspace:*",

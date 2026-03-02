@@ -1,10 +1,10 @@
-import { defineConfig } from 'eslint/config'
-import { includeIgnoreFile } from '@eslint/compat'
-import path from 'node:path'
-import importPlugin from 'eslint-plugin-import'
-import eslint from '@eslint/js'
-import tseslint from 'typescript-eslint'
-import turboPlugin from 'eslint-plugin-turbo'
+import path from 'node:path';
+import { includeIgnoreFile } from '@eslint/compat';
+import eslint from '@eslint/js';
+import importPlugin from 'eslint-plugin-import';
+import turboPlugin from 'eslint-plugin-turbo';
+import { defineConfig } from 'eslint/config';
+import tseslint from 'typescript-eslint';
 
 export const restrictEnvAccess = defineConfig(
     { ignores: ['**/env.ts'] },
@@ -31,7 +31,7 @@ export const restrictEnvAccess = defineConfig(
             ],
         },
     }
-)
+);
 
 export const baseConfig = defineConfig(
     includeIgnoreFile(path.join(import.meta.dirname, '../../.gitignore')),
@@ -79,4 +79,4 @@ export const baseConfig = defineConfig(
             },
         },
     }
-)
+);
