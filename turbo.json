@@ -13,11 +13,10 @@
             "persistent": false
         },
         "lint": {
-            "dependsOn": ["^lint"],
-            "outputs": [".cache/.eslintcache"]
+            "cache": false
         },
         "format": {
-            "outputs": [".cache/.prettiercache"],
+            "cache": false,
             "outputLogs": "new-only"
         },
         "typecheck": {

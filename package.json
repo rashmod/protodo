@@ -9,8 +9,8 @@
         "clean": "turbo run clean && git clean -xdf .turbo node_modules",
         "lint": "turbo run lint --continue -- --cache --cache-location .cache/.eslintcache",
         "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
-        "format": "turbo run format --continue -- --cache --cache-location .cache/.prettiercache",
-        "format:fix": "turbo run format --continue -- --write --cache --cache-location .cache/.prettiercache",
+        "format": "turbo run format --continue -- --check",
+        "format:fix": "turbo run format --continue -- --write",
         "lint:ws": "pnpm dlx sherif@latest",
         "lint:ws:fix": "pnpm dlx sherif@latest --fix",
         "postinstall": "pnpm lint:ws"
