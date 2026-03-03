@@ -1,7 +1,7 @@
 export function MdxMetrics({
     items,
 }: {
-    items: Array<{ label: string; value: string }>;
+    items: { label: string; value: string }[];
 }) {
     return (
         <div className="not-prose my-6 grid gap-3 sm:grid-cols-3">

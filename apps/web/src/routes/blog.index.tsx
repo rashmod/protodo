@@ -36,6 +36,11 @@ function BlogIndex() {
 
     const featured = postsByDate[0];
     const posts = postsByDate.slice(1);
+
+    if (!featured) {
+        return <div>No featured post found</div>;
+    }
+
     return (
         <main className="mx-auto max-w-6xl px-4 pt-14 pb-8">
             <section className="mb-4">

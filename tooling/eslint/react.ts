@@ -21,6 +21,7 @@ export const reactConfig = defineConfig(
         },
         rules: {
             ...jsxA11yPlugin.flatConfigs.recommended.rules,
+            '@typescript-eslint/only-throw-error': 'off', // this is for throwing redirects in tanstack router
         },
     },
     reactHooks.configs.flat['recommended-latest']!
