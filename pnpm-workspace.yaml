@@ -5,12 +5,20 @@ packages:
 
 catalog:
     'prettier': '^3.7.4'
-    'eslint': ^9.38.0
+    'eslint': '^9.38.0'
     '@types/node': '^25.3.3'
     'typescript': '5.9.2'
     '@eslint/js': '^9.39.3'
     '@tailwindcss/vite': '^4.2.1'
-    'tailwind': '^4.0.0'
+    'tailwindcss': '^4.2.1'
+    'zod': '^4.3.5'
+
+catalogs:
+    react19:
+        '@types/react': '^19.2.0'
+        '@types/react-dom': '^19.2.0'
+        'react': '^19.2.0'
+        'react-dom': '^19.2.0'
 
 publicHoistPattern:
     - '@ianvs/prettier-plugin-sort-imports'
