@@ -5,20 +5,20 @@ import { Slot as SlotPrimitive } from 'radix-ui';
 import { cn } from '@protodo/ui';
 
 export const buttonVariants = cva(
-    "focus-visible:border-violet-500 focus-visible:ring-violet-500/50 aria-invalid:ring-rose-500/20 dark:aria-invalid:ring-rose-500/40 aria-invalid:border-rose-500 inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+    "focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
     {
         variants: {
             variant: {
                 default:
-                    'bg-indigo-600 text-white hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400 shadow-xs',
+                    'bg-primary text-primary-foreground hover:bg-primary/90 shadow-xs',
                 destructive:
-                    'bg-rose-600 text-white hover:bg-rose-500 dark:bg-rose-500 dark:hover:bg-rose-400 shadow-xs',
+                    'bg-destructive hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 text-white shadow-xs',
                 outline:
-                    'bg-white text-zinc-900 border border-zinc-300 hover:bg-zinc-100 dark:bg-zinc-900/30 dark:text-zinc-100 dark:border-zinc-700 dark:hover:bg-zinc-800 shadow-xs',
+                    'bg-background hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 border shadow-xs',
                 secondary:
-                    'bg-emerald-100 text-emerald-900 hover:bg-emerald-200 dark:bg-emerald-900/40 dark:text-emerald-100 dark:hover:bg-emerald-800/50 shadow-xs',
-                ghost: 'hover:bg-amber-100 hover:text-amber-900 dark:hover:bg-amber-900/30 dark:hover:text-amber-100',
-                link: 'text-cyan-600 dark:text-cyan-400 underline-offset-4 hover:underline',
+                    'bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-xs',
+                ghost: 'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
+                link: 'text-primary underline-offset-4 hover:underline',
             },
             size: {
                 default: 'h-9 px-4 py-2 has-[>svg]:px-3',
