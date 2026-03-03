@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router';
 
-import { Button } from '@protodo/ui/button';
+import { Button } from '@protodo/ui/components/button';
 
 export const Route = createFileRoute('/')({ component: App });
 
