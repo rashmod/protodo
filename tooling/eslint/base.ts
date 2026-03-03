@@ -40,6 +40,7 @@ export const baseConfig = defineConfig(
         files: ['**/*.js', '**/*.ts', '**/*.tsx'],
         plugins: {
             import: importPlugin,
+            turbo: turboPlugin,
         },
         extends: [
             eslint.configs.recommended,
