@@ -20,8 +20,8 @@ const config = {
         '^(expo(.*)$)|^(expo$)',
         '<THIRD_PARTY_MODULES>',
         '',
-        '<TYPES>^@acme',
-        '^@acme/(.*)$',
+        '<TYPES>^@protodo',
+        '^@protodo/(.*)$',
         '',
         '<TYPES>^[.|..|~]',
         '^~/',
@@ -46,7 +46,5 @@ const config = {
         },
     ],
 };
-
-const foo = 'hello-world';
 
 export default config;
