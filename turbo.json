@@ -5,17 +5,24 @@
         "build": {
             "dependsOn": ["^build"],
             "inputs": ["$TURBO_DEFAULT$", ".env*"],
-            "outputs": [".next/**", "!.next/cache/**"]
-        },
-        "lint": {
-            "dependsOn": ["^lint"]
-        },
-        "typecheck": {
-            "dependsOn": ["^typecheck"]
+            "outputs": [".cache/tsbuildinfo.json", "dist/**"]
         },
         "dev": {
+            "dependsOn": ["^dev"],
             "cache": false,
-            "persistent": true
+            "persistent": false
+        },
+        "lint": {
+            "dependsOn": ["^lint"],
+            "outputs": [".cache/.eslintcache"]
+        },
+        "format": {
+            "outputs": [".cache/.prettiercache"],
+            "outputLogs": "new-only"
+        },
+        "typecheck": {
+            "dependsOn": ["^typecheck"],
+            "outputs": [".cache/tsbuildinfo.json"]
         },
         "clean": {
             "cache": false,
