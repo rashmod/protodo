@@ -1,25 +1,25 @@
 packages:
-    - 'apps/*'
-    - 'packages/*'
-    - 'tooling/*'
+  - apps/*
+  - packages/*
+  - tooling/*
 
 catalog:
-    'prettier': '^3.7.4'
-    'eslint': '^9.38.0'
-    '@types/node': '^25.3.3'
-    'typescript': '5.9.2'
-    '@eslint/js': '^9.39.3'
-    '@tailwindcss/vite': '^4.2.1'
-    'tailwindcss': '^4.2.1'
-    'zod': '^4.3.5'
+  '@eslint/js': ^9.39.3
+  '@tailwindcss/vite': ^4.2.1
+  '@types/node': ^25.3.3
+  eslint: ^9.38.0
+  prettier: ^3.7.4
+  tailwindcss: ^4.2.1
+  typescript: 5.9.2
+  zod: 4.3.6
 
 catalogs:
-    react19:
-        '@types/react': '^19.2.0'
-        '@types/react-dom': '^19.2.0'
-        'react': '^19.2.0'
-        'react-dom': '^19.2.0'
+  react19:
+    '@types/react': ^19.2.0
+    '@types/react-dom': ^19.2.0
+    react: ^19.2.0
+    react-dom: ^19.2.0
 
 publicHoistPattern:
-    - '@ianvs/prettier-plugin-sort-imports'
-    - prettier-plugin-tailwindcss
+  - '@ianvs/prettier-plugin-sort-imports'
+  - prettier-plugin-tailwindcss

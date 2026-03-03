@@ -53,3 +53,6 @@ dist/
 
 # tanstack
 .tanstack
+
+# content-collections
+.content-collections/

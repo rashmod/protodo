@@ -2,6 +2,7 @@
     "$schema": "https://ui.shadcn.com/schema.json",
     "style": "new-york",
     "tsx": true,
+    "rsc": false,
     "tailwind": {
         "config": "",
         "css": "unused.css",
@@ -9,8 +10,9 @@
         "cssVariables": true
     },
     "aliases": {
-        "utils": "@protodo/ui",
-        "components": "src/",
-        "ui": "src/"
+        "components": "@protodo/ui/components",
+        "ui": "@protodo/ui/components",
+        "hooks": "@protodo/ui/hooks",
+        "utils": "@protodo/ui"
     }
 }

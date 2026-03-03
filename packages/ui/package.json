@@ -4,8 +4,9 @@
     "type": "module",
     "exports": {
         ".": "./src/index.ts",
-        "./tailwind-source": "./src/tailwind-source.css",
-        "./button": "./src/button.tsx"
+        "./components/*": "./src/components/*.tsx",
+        "./hooks/*": "./src/hooks/*.ts",
+        "./tailwind-source": "./src/tailwind-source.css"
     },
     "scripts": {
         "typecheck": "tsc --noEmit",
