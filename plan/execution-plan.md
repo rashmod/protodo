@@ -72,6 +72,7 @@ A user can sign up, authenticate, create, edit, complete, and delete tasks. Data
 - Single environment
 - Manual deployments
 - No zero-downtime requirement
+- Local HTTPS development domain (trusted cert + custom local domain such as `app.protodo.localhost`)
 
 **Security**
 
@@ -157,9 +158,10 @@ Multiple users collaborate inside shared workspaces. Users can invite others, ma
 
 **Infrastructure**
 
-- Multi-environment (dev / prod)
+- Multi-environment (local / dev / prod)
 - Build pipelines
 - Repeatable deployments
+- Documented local HTTPS bootstrap (certificate generation + domain mapping)
 
 **Security**
 

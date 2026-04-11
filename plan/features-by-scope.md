@@ -149,6 +149,7 @@ These are general production engineering concerns that apply to any SaaS applica
 ### Infrastructure & Deployment
 
 - multi env setup
+- local https domain setup (trusted cert + custom local domain)
 - kubernetes
 - pr preview deployments
 - load balancing

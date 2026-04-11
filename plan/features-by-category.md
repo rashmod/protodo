@@ -122,6 +122,7 @@ Everything that makes the product work, scale, and stay alive.
 ### Infrastructure & Deployment
 
 - multi-env setup
+- local HTTPS domain setup (trusted cert + custom local domain)
 - Kubernetes
 - preview deployments
 - load balancing

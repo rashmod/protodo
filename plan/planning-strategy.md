@@ -7,6 +7,12 @@ In rare cases where a large architectural or systemic change cannot be delivered
 
 The goal is to simulate how a real SaaS company ships, operates, and evolves its product over time—prioritizing continuous usability, realistic tradeoffs, and staged maturity over theoretical completeness.
 
+**Local development baseline**
+
+- Local development should use HTTPS with trusted local certificates.
+- Local development should run on a production-like custom domain (for example, `app.protodo.localhost`) instead of raw `localhost` where feasible.
+- Auth callbacks, cookies, and CORS behavior should be validated against this local HTTPS domain setup early.
+
 ---
 
 ## Phase 1 — MVP (Foundational Product)
