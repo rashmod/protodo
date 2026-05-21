@@ -70,18 +70,24 @@ The recommended order is:
 7. Authentication, authorization, and multi-tenancy
 8. API design and contracts
 9. Asynchronous systems and distributed workflows
-10. Security engineering and security testing
-11. Reliability, observability, and operations
-12. Billing, entitlements, and SaaS monetization systems
-13. Delivery, infrastructure, and organizational mechanics
-14. Advanced revisits and depth passes
+10. Testing and quality engineering
+11. Search and retrieval
+12. Analytics and experimentation
+13. Security engineering and security testing
+14. Reliability, observability, and operations
+15. Performance engineering
+16. Developer experience and tooling
+17. Billing, entitlements, and SaaS monetization systems
+18. Delivery, infrastructure, and organizational mechanics
+19. Advanced revisits and depth passes
 
 This is not the same as the original curriculum order.
 It has been adjusted to favor technical capability building.
 In particular:
 
 - JavaScript, TypeScript, and Node.js move up explicitly because stack fluency is a real technical dependency, not background noise
-- security moves earlier in practical importance, even if some broad privacy/governance work stays later
+- testing, search, analytics, performance, and developer tooling are now explicit capability stages instead of being left implicit
+- security moves later than core application architecture so it can be studied against a concrete system surface
 - billing moves later because it depends on modeling, async systems, and access rules
 - delivery and infrastructure stay later because they make more sense after you understand the application and operational system you are delivering
 
@@ -543,7 +549,125 @@ Move on when you can explain:
 
 ---
 
-## Stage 10. Security Engineering and Security Testing
+## Stage 10. Testing and Quality Engineering
+
+### Goal
+
+Turn testing into a deliberate engineering discipline across domain logic, APIs, UI behavior, auth rules, tenancy boundaries, and operationally important flows.
+
+### Study order
+
+1. [Testing JavaScript](https://www.testingjavascript.com/)
+2. [The Practical Test Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html?source=post_page)
+3. [Contract Test](https://martinfowler.com/bliki/ContractTest.html)
+4. [Pact Documentation](https://docs.pact.io/)
+5. Revisit [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/latest/) from a verification-method perspective
+
+### Why this comes here
+
+At this point you already understand the application shape well enough for testing strategy to be mapped to real system risks instead of generic testing advice.
+
+### Intended outcome
+
+By the end of this stage, you should be able to:
+
+- choose the right test layer for a given risk
+- reason about integration, end-to-end, and contract testing boundaries
+- design fixtures and test data with less brittleness
+- keep tests aligned to behavior rather than implementation trivia
+
+### Stop condition before moving on
+
+Move on when you can explain:
+
+- what should be unit tested versus integration tested
+- when contract testing is worth the cost
+- how auth, tenancy, and failure paths are verified explicitly
+- how the test suite stays trustworthy as the system evolves
+
+---
+
+## Stage 11. Search and Retrieval
+
+### Goal
+
+Learn search as a separate application capability with its own product, indexing, relevance, and consistency tradeoffs.
+
+### Study order
+
+1. [Relevant Search](https://www.manning.com/books/relevant-search)
+2. [Meilisearch Relevancy Documentation](https://www.meilisearch.com/docs/learn/relevancy/relevancy)
+3. [Typesense Ranking and Relevance](https://typesense.org/docs/guide/ranking-and-relevance.html)
+4. Later revisit: [Enterprise Search in Action](https://www.manning.com/books/enterprise-search-in-action-cx)
+
+### Why this comes here
+
+Search depends on prior understanding of:
+
+- data modeling
+- frontend behavior
+- API contracts
+- eventual consistency concerns
+
+This is where it becomes useful to treat search as more than a query helper.
+
+### Intended outcome
+
+By the end of this stage, you should be able to:
+
+- explain why search infrastructure is separate from primary data paths
+- reason about relevance, filters, autocomplete, and freshness tradeoffs
+- understand indexing lag and its product impact
+- make deliberate search UX and retrieval decisions
+
+### Stop condition before moving on
+
+Move on when you can explain:
+
+- what the search index contains and why
+- how relevance is shaped and evaluated
+- what guarantees search does and does not provide compared with primary storage
+
+---
+
+## Stage 12. Analytics and Experimentation
+
+### Goal
+
+Build a deliberate approach to product analytics, metric design, and experimentation that is separate from operational telemetry.
+
+### Study order
+
+1. [Lean Analytics](https://www.oreilly.com/library/view/lean-analytics/9781449335687/)
+2. [Trustworthy Online Controlled Experiments](https://www.cambridge.org/core/books/trustworthy-online-controlled-experiments/trustworthy-online-controlled-experiments/BFFD7CC0B7325B5DCEEFFB1DD9401F7E)
+3. [Experiment Guide](https://experimentguide.com/)
+4. Later revisit: [Implementing Analytics](https://www.oreilly.com/library/view/implementing-analytics/9780124016965/)
+
+### Why this comes here
+
+By now you understand enough of the application and user-facing behavior to instrument product behavior intentionally instead of emitting random events.
+
+### Intended outcome
+
+By the end of this stage, you should be able to:
+
+- define a coherent event taxonomy
+- distinguish product analytics from engineering telemetry
+- reason about funnels, cohorts, and feature adoption
+- understand what makes an online experiment trustworthy or misleading
+
+### Stop condition before moving on
+
+Move on when you can explain:
+
+- which product events matter and why
+- how analytics data quality breaks down
+- what an experiment can and cannot prove
+- how privacy concerns affect event design
+
+---
+
+## Stage 13. Security Engineering and Security Testing
 
 ### Goal
 
@@ -601,7 +725,7 @@ Move on when you can:
 
 ---
 
-## Stage 11. Reliability, Observability, and Operations
+## Stage 14. Reliability, Observability, and Operations
 
 ### Goal
 
@@ -649,7 +773,88 @@ Move on when you can clearly explain:
 
 ---
 
-## Stage 12. Billing, Entitlements, and SaaS Monetization Systems
+## Stage 15. Performance Engineering
+
+### Goal
+
+Treat performance as a measurable engineering discipline across backend, frontend, data, and runtime behavior rather than as ad hoc optimization.
+
+### Study order
+
+1. [Release It! Second Edition](https://pragprog.com/titles/mnee2/release-it-second-edition/)
+2. [Web Performance in Action](https://www.oreilly.com/library/view/web-performance-in/9781617293771/)
+3. [Systems Performance, 2nd Edition](https://www.brendangregg.com/systems-performance-2nd-edition-book.html)
+4. [High Performance Browser Networking](https://www.oreilly.com/library/view/high-performance-browser/9781449344757/)
+5. [MDN Web Performance](https://developer.mozilla.org/en-US/docs/Web/Performance)
+
+### Why this comes here
+
+Performance work becomes much more meaningful after you already understand:
+
+- observability
+- application boundaries
+- data access patterns
+- frontend behavior
+- runtime and infrastructure constraints
+
+### Intended outcome
+
+By the end of this stage, you should be able to:
+
+- diagnose likely bottlenecks before changing code blindly
+- connect performance symptoms to metrics, traces, profiling, and runtime behavior
+- reason about user-perceived speed versus raw throughput
+- understand when a performance fix is also a resilience or cost tradeoff
+
+### Stop condition before moving on
+
+Move on when you can explain:
+
+- how you would profile a suspected bottleneck
+- how frontend and backend performance interact
+- how optimization tradeoffs affect correctness, cost, and maintainability
+
+---
+
+## Stage 16. Developer Experience and Tooling
+
+### Goal
+
+Build a trustworthy and maintainable engineering workflow around the codebase so local development, CI, packaging, branching, and feedback loops support the system instead of fighting it.
+
+### Study order
+
+1. [Software Engineering at Google](https://www.oreilly.com/library/view/software-engineering-at/9781492082781/)
+2. [Accelerate](https://www.oreilly.com/library/view/accelerate/9781457191435/)
+3. [Patterns for Managing Source Code Branches](https://martinfowler.com/articles/branching-patterns.html?_hsmi=87382959)
+4. [Branch By Abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html)
+5. [Nx](https://nx.dev/)
+
+### Why this comes here
+
+Tooling and workflow quality matter more once you already understand the system you are trying to build, test, ship, and maintain.
+This stage turns engineering workflow into an explicit capability rather than a pile of defaults.
+
+### Intended outcome
+
+By the end of this stage, you should be able to:
+
+- explain why major workflow tools exist and what problem they solve
+- reason about monorepo or workspace tradeoffs in a JS and TS system
+- improve feedback loops without damaging confidence
+- evolve systems safely without relying on long-lived branches and hidden work
+
+### Stop condition before moving on
+
+Move on when you can explain:
+
+- how local, CI, and review workflows reinforce code quality
+- what branching and release practices fit the system maturity
+- how tooling choices help or hurt architecture clarity
+
+---
+
+## Stage 17. Billing, Entitlements, and SaaS Monetization Systems
 
 ### Goal
 
@@ -699,7 +904,7 @@ Move on when you can explain:
 
 ---
 
-## Stage 13. Delivery, Infrastructure, and Organizational Mechanics
+## Stage 18. Delivery, Infrastructure, and Organizational Mechanics
 
 ### Goal
 
@@ -744,7 +949,7 @@ Move on when you can explain:
 
 ---
 
-## Stage 14. Advanced Revisits and Depth Passes
+## Stage 19. Advanced Revisits and Depth Passes
 
 This stage exists because some topics should not be mastered in the first pass.
 They should be revisited after the core system picture is strong.
@@ -797,9 +1002,12 @@ If time or budget pressure forces harder prioritization, preserve this order of 
 6. authentication, authorization, and multi-tenancy
 7. APIs and contracts
 8. asynchronous systems
-9. security engineering
-10. reliability and observability
-11. billing and entitlements
-12. delivery and infrastructure
+9. testing and quality engineering
+10. security engineering
+11. reliability and observability
+12. performance engineering
+13. developer experience and tooling
+14. billing and entitlements
+15. delivery and infrastructure
 
 That ordering reflects the main priority: building real technical expertise.
